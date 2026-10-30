@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-cormorant: 'Cormorant Garamond', serif;
+    --font-script: 'Alex Brush', cursive;
+    --font-tamil: 'Noto Serif Tamil', serif;
+    --gold-primary: #C89B3C;
+    --gold-light: #F4E29C;
+    --gold-dark: #8F661B;
+    --maroon-deep: #4A0E17;
+    --maroon-crimson: #6E1226;
+    --parchment: #FDFBF7;
+    --parchment-warm: #F7EFE2;
+  }
+
+  body {
+    background-color: #FDFBF7;
+    color: #332018;
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-decorative {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-tamil {
+  font-family: 'Noto Serif Tamil', serif;
+}
+
+.font-sans-modern {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Gold foil gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #B58428 0%, #E8CD78 45%, #B58428 75%, #FBF1BD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Maroon luxury text */
+.text-royal-maroon {
+  color: #581423;
+}
+
+/* Ornate card shadows & textures */
+.shadow-royal {
+  box-shadow: 0 10px 30px -5px rgba(90, 20, 35, 0.15), 0 0 15px rgba(200, 155, 60, 0.2);
+}
+
+.shadow-card-elevated {
+  box-shadow: 0 20px 45px -10px rgba(74, 14, 23, 0.18), 0 0 20px rgba(212, 175, 55, 0.25);
+}
+
+/* 3D Gatefold Card CSS Transformations */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7EFE2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C89B3C;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8F661B;
+}
